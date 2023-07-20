@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <title>techverse-materials</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link href="css1/templatemo-style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+    <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- //font-awesome icons -->
+    <link href="css/blast.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style10.css" />
+    <!--stylesheets-->
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .footer-dark {
+            padding: 50px 0;
+            color: #000102;
+            background-color: #ffffff;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+        
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+        
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+        
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+        
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+        
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+        
+        .footer-dark .item.social {
+            text-align: center;
+        }
+        
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgb(255, 255, 255);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+            background-color: #fff;
+        }
+        
+        .footer-dark .item.social>a:hover {
+            opacity: 0.9;
+        }
+        
+        .footer-dark .copyright {
+            text-align: center;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    </style>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            line-height: 1em;
+            text-align: center;
+            color: #4DC3FA;
+        }
+        
+        h2 {
+            font-size: 1em;
+            font-weight: 300;
+            text-align: center;
+            display: block;
+            line-height: 1em;
+            padding-bottom: 2em;
+            color: #FB667A;
+        }
+        
+        h2 a {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #FB667A;
+            text-decoration: none;
+        }
+        
+        .blue {
+            color: #185875;
+        }
+        
+        .yellow {
+            color: #FFF842;
+        }
+        
+        .container th h1 {
+            font-weight: bold;
+            font-size: 1em;
+            text-align: left;
+            color: #185875;
+        }
+        
+        .container td {
+            font-weight: normal;
+            font-size: 1em;
+            -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+            -moz-box-shadow: 0 2px 2px -2px #0E1119;
+            box-shadow: 0 2px 2px -2px #0E1119;
+        }
+        
+        .container {
+            text-align: left;
+            overflow: hidden;
+            width: 80%;
+            margin: 0 auto;
+            display: table;
+            padding: 0 0 8em 0;
+        }
+        
+        .container td,
+        .container th {
+            padding-bottom: 2%;
+            padding-top: 2%;
+            padding-left: 2%;
+        }
+        /* Background-color of the odd rows */
+        
+        .container tr:nth-child(odd) {
+            background-color: #323C50;
+        }
+        /* Background-color of the even rows */
+        
+        .container tr:nth-child(even) {
+            background-color: #2C3446;
+        }
+        
+        .container th {
+            background-color: #1F2739;
+        }
+        
+        .container td:first-child {
+            color: #FB667A;
+        }
+        
+        .container tr:hover {
+            background-color: #464A52;
+            -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+            -moz-box-shadow: 0 6px 6px -6px #0E1119;
+            box-shadow: 0 6px 6px -6px #0E1119;
+        }
+        
+        .container td:hover {
+            background-color: #FFF842;
+            color: #403E10;
+            font-weight: bold;
+            box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+            transform: translate3d(6px, -6px, 0);
+            transition-delay: 0s;
+            transition-duration: 0.4s;
+            transition-property: all;
+            transition-timing-function: line;
+        }
+        
+        @media (max-width: 800px) {
+            .container td:nth-child(4),
+            .container th:nth-child(4) {
+                display: none;
+            }
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+</head>
+
+<body translate="no">
+
+
+    <div class="header-outs" id="header" style="background-color: rgba(133, 133, 133, 0.247);">
+        <div class="header-w3layouts">
+            <div class="container">
+                <div class="row headder-contact">
+                    <div class="col-lg-6 col-md-7 col-sm-9 info-contact-agile">
+                        <ul>
+                            <li>
+                                <span class="fas fa-phone"></span>
+                                <p style="color: black;">+91 63531 24568</p>
+                            </li>
+                            <li>
+                                <span class="fas fa-envelope"></span>
+                                <p><a href="mailto:info@example.com" style="color: black;">techverse1@gmail.com.com</a></p>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-3 icons px-0">
+                        <ul>
+                            <li><a href="#"><span class="fab fa-facebook-f" style="color: black;"></span></a></li>
+                            <li><a href="#"><span class="bi bi-instagram" style="color: black;"></span></a></li>
+                            <li><a href="#"><span class="bi bi-github" style="color: black;"></span></a></li>
+                            <li><a href="#"><span class="bi bi-twitter" style="color: black;"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(133, 133, 133, 0.247);">
+                <div class="hedder-up">
+                    <h1><a href="index.html" class="navbar-brand" data-blast="color">techverse</a></h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                      </button>
+                <div class="headdser-nav-color" data-blast="bgColor">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="#service" class="nav-link scroll">more to learn</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <br><br><br><br><br><br><br><br>
+
+        <br><br>
+        <br><br><br>
+
+        <table class="container">
+            <thead>
+                <tr>
+                    <th>
+                        <h1>
+                            <center style="font-size:32px;color:#fff;">YouTube Channels<br><br></center>
+                        </h1>
+                    </th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/c/CodeWithHarry/playlists">
+                                <center>Code With Harry</center>
+                            </a>
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/channel/UCF7BExjT2zH_mmyqOB139Dg/playlists">
+                                <center>Apni Kaksha</center>
+                            </a>
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=jenny%27s+lectures+playlist">
+                                <center>Jenny's lecture</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Gate+Smashers+playlist">
+                                <center>Gate Smashers</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Bhagavan+Singh+Vishwakarma+playlist">
+                                <center>Bhagavan Singh Vishwakarma</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Telusko+playlist">
+                                <center>Telusko</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=MySirG.com+playlist">
+                                <center>MySirG.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Programming+with+Mosh+playlist">
+                                <center>Programming with Mosh</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=freecodecamp.org+playlist">
+                                <center>freecodecamp.org</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Traversy+meadia+playlist">
+                                <center>Traversy meadia</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=ProgrammingKnowledge+playlist">
+                                <center>ProgrammingKnowledge</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Derek+Banas+playlist">
+                                <center>Derek Banas</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Clever+Programer+playlist">
+                                <center>Clever Programer</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=Learncode.academy+playlist">
+                                <center>Learncode.academy</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/results?search_query=mycodeschool+playlist">
+                                <center>mycodeschool</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.youtube.com/c/LoveBabbar1">
+                                <center>Love Babber</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+
+            </tbody>
+            <thead>
+                <tr>
+                    <th>
+                        <h1>
+                            <center style="font-size:32px; color: #fff;;">Coding Practice</center>
+                        </h1>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.hackerrank.com/">
+                                <center>www.hackerrank.com</center>
+                            </a>
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.topcoder.com/">
+                                <center>www.topcoder.com</center>
+                            </a>
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="www.codechef.com">
+                                <center>www.codechef.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.coderbyte.com/">
+                                <center>www.coderbyte.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://leetcode.com/">
+                                <center>leetcode.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.hackerearth.com/">
+                                <center>www.hackerearth.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://exercism.org/">
+                                <center>exercism.io</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+
+
+
+            </tbody>
+            <thead>
+                <tr>
+                    <th>
+                        <h1>
+                            <center style="font-size:32px;color: #fff;;">Websites</center>
+                        </h1>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.w3schools.com/">
+                                <center>www.w3schools.com</center>
+                            </a>
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="www.geeksforgeeks.org">
+                                <center>www.geeksforgeeks.org</center>
+                            </a>
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.programiz.com/">
+                                <center>www.programiz.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.studytonight.com/">
+                                <center>www.studytonight.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.javatpoint.com/">
+                                <center>www.javatpoint.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.freecodecamp.org/">
+                                <center>www.freecodecamp.org</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.sololearn.com/home">
+                                <center>www.sololearn.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.guru99.com/">
+                                <center>www.guru99.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://tutorialtpoint.com/">
+                                <center>www.tutorialtpoint.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://olympus.mygreatlearning.com/login">
+                                <center>GreatLearning.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.mysirg.com/video-tutorials/">
+                                <center>Mysirji.com</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+            <thead>
+                <tr>
+                    <th>
+                        <h1>
+                            <center style="font-size:32px;color:#fff;">Apps</center>
+                        </h1>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://www.sololearn.com/home">
+                                <center>Sololearn</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://play.google.com/store/apps/details?id=com.freeit.java&hl=en_IN&gl=US">
+                                <center>ProgramingHub</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=en_IN&gl=US">
+                                <center>Grasshoper</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>
+                            <a style="color:#fb667a;" href="https://play.google.com/store/apps/details?id=com.getmimo&hl=en_IN&gl=US">
+                                <center>Mimo</center>
+                            </a>
+                        </h3>
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+
+        </table>
+        <script src='js/jquery-2.2.3.min.js'></script>
+        <!--//js working-->
+        <!--blast colors change-->
+        <script src="js/blast.min.js"></script>
+        <!--//blast colors change-->
+        <!--responsiveslides banner-->
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+            $(function() {
+                // Slideshow 4
+                $("#slider4").responsiveSlides({
+                    auto: true,
+                    pager: false,
+                    nav: true,
+                    speed: 900,
+                    namespace: "callbacks",
+                    before: function() {
+                        $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function() {
+                        $('.events').append("<li>after event fired.</li>");
+                    }
+                });
+
+            });
+        </script>
+        <!--// responsiveslides banner-->
+        <!--responsive tabs-->
+        <script src="js/easy-responsive-tabs.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#horizontalTab').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion           
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    closed: 'accordion', // Start closed if in accordion view
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+            });
+        </script>
+        <!--// responsive tabs-->
+        <!--About OnScroll-Number-Increase-JavaScript -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.countup.js"></script>
+        <script>
+            $('.counter').countUp();
+        </script>
+        <!-- //OnScroll-Number-Increase-JavaScript -->
+        <!-- start-smoth-scrolling -->
+        <script src="js/move-top.js"></script>
+        <script src="js/easing.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 900);
+                });
+            });
+        </script>
+        <!-- start-smoth-scrolling -->
+        <!-- here stars scrolling icon -->
+        <script>
+            $(document).ready(function() {
+
+                var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear'
+                };
+
+
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+
+            });
+        </script>
+        <!-- //here ends scrolling icon -->
+        <!--bootstrap working-->
+        <script src="js/bootstrap.min.js"></script>
+        <div class="footer-dark" style="background-color: #fff;">
+            <footer style="color:black;" style="background-color: #fff;">
+                <div class="container" style="background-color: #fff;">
+                    <div class="row" style="background-color: #fff;">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#service">materials</a></li>
+                                <li><a href="#contact">contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li>
+                                    <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        Team
+                                        </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Team</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Sahil Gandhi<br> Smit savaliya<br> Parth miroliya<br> Zeel sojitra
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li> <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                                        About techverse
+                                        </a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">techverse</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    techverse is a community .The techverse is the next evolution of social connection. Our company's vision is to help bring the techverse to life.
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3><img src="images/techverse.png" height="70px" width="170px" </h3>
+                                <p><br>techverse is a community .The techverse is the next evolution of social connection. Our company's vision is to help bring the techverse to life.</p><br>
+                                <hr>
+                                <a href="#"><img src="https://img.icons8.com/color/48/000000/google-logo.png" height="40px" width="40px" /></a>
+                                <a href="#"><img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-linkedin-social-media-justicon-flat-justicon.png" height="40px" width="40px" />
+                                </a>
+                                <a href="#"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a>
+                                <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/github.png" height="40px" width="40px" /></a>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+
+                </div>
+
+        </div>
+        <center>
+            <p class="copyright" style="color: black;">techverse © 2022</p>
+        </center>
+        </footer>
+    </div>
+    </div>
+    <br>
+</body>
+
+</html>
