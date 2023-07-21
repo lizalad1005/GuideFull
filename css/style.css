@@ -2064,6 +2064,14 @@ nav.border-line {
     .profile {
         width: 75%;
     }
+    .bot {
+        position: fixed;
+        bottom: 80px;
+        right:10px;
+        border-radius: 70%;
+    }
+    
+    
 }
 
 @media(max-width:320px) {
@@ -2091,7 +2099,16 @@ nav.border-line {
     }
     .img-box ul {
         top: 189px;
+    }   
+    .bot {
+        position: fixed;
+        bottom: 80px;
+        right:10px;
+        border-radius: 70%;
     }
+    
+     
+    
 }
 
 
